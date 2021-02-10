@@ -14,7 +14,8 @@ const mathMarker = "/math";
 const inlineMathMarker = "/im";
 const welcomeMessages = [
     'Assalomu alaykum',
-    'Latex da yozilgan formulani `/math` buyrug‘idan so‘ng yozib menga yuboring! Misol uchun: /math \\nabla w_{pq}=-\\eta\\frac{\\partial E}{\\partial w_{pq}}.'
+    'Latex da yozilgan formulani `/math` buyrug‘idan so‘ng yozib menga yuboring! Misol uchun: /math \\nabla w_{pq}=-\\eta\\frac{\\partial E}{\\partial w_{pq}}.',
+    'Yaratuvchi: @Programmer1718'
 ];
 const helpMessages = [
     'Shu ko‘rinishda yozing:\n```\n/math \\nabla w_{pq}=-\\eta\\frac{\\partial E}{\\partial w_{pq}}\n```',

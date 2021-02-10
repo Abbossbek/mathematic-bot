@@ -85,4 +85,5 @@ bot.telegram.getMe().then((botInfo) => {
 });
 
 bot.startPolling();
+bot.launch();
 console.log('Bot started');

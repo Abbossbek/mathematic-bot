@@ -1,0 +1,22 @@
+{
+  "name": "liwde_math_bot",
+  "version": "1.0.0",
+  "description": "Telegram Bot to convert LaTeX math formulas into images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lukas Heimann",
+  "repository": "github:liwde/mathbot",
+  "license": "MIT",
+  "dependencies": {
+    "bcp47": "^1.1.2",
+    "console-stamp": "^0.2.9",
+    "data-uri-to-buffer": "^3.0.1",
+    "got": "^11.7.0",
+    "jimp": "^0.16.1",
+    "mathjax-node-svg2png": "^2.0.0",
+    "md5": "^2.3.0",
+    "telegraf": "^3.38.0"
+  }
+}

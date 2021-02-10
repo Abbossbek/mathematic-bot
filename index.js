@@ -4,7 +4,7 @@ const { onError, sendMultipleMessages } = require('./util');
 const { typesetAndScale } = require('./typeset');
 
 const Telegraf = require('telegraf');
-const bot = new Telegraf(process.env.BOT_TOKEN);
+const bot = new Telegraf('1628549057:AAFs8x9kw83XrXBFo7yWXoD25Q4hC78PTtA');
 
 /**
  * Config

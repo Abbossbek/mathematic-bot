@@ -13,21 +13,19 @@ const bot = new Telegraf('1628549057:AAFs8x9kw83XrXBFo7yWXoD25Q4hC78PTtA');
 const mathMarker = "/math";
 const inlineMathMarker = "/im";
 const welcomeMessages = [
-    'Hi!',
-    'Schick mir TeX-formatierte Mathematik mit dem vorangestellten Befehl `/math` und ich antworte dir mit der hübsch gesetzten Formel. Der Befehl `/help` zeigt eine ausführlichere Hilfe.'
+    'Assalomu alaykum',
+    'Latex da yozilgan formulani `/math` buyrug‘idan so‘ng yozib menga yuboring! Misol uchun: /math \\nabla w_{pq}=-\\eta\\frac{\\partial E}{\\partial w_{pq}}.'
 ];
 const helpMessages = [
-    'Probier es einfach mal aus:\n```\n/math \\nabla w_{pq}=-\\eta\\frac{\\partial E}{\\partial w_{pq}}\n```',
-    'Du kannst auch TeX inline setzen lassen. Starte deine Nachricht mit `/im` und setze die Formeln in Code-Blöcke (mit Markdown)',
-    'Den vollen unterstützten Befehlssatz findest du unter http://docs.mathjax.org/en/latest/input/tex/macros/index.html'
+    'Shu ko‘rinishda yozing:\n```\n/math \\nabla w_{pq}=-\\eta\\frac{\\partial E}{\\partial w_{pq}}\n```',
+    'Yaratuvchi: @Programmer1718'
 ];
 
 
 if (process.env.MATOMO_URL) {
     const usage = require('./usage');
     bot.use(usage);
-    helpMessages.push('Wenn du den Bot mit dem Befehl `/math` benutzt, wird anonym gezählt, dass du den Bot genutzt hat, wie lange die Generierung gedauert hat und welche Sprache in Telegram eingestellt ist – _zu keinem Zeitpunkt wird dein Name, Nutzername, deine Nutzer-ID oder die von dir gesetzte Formel gespeichert_. Diese Aufstellung hilft mir dabei, potentielle Probleme aufzudecken und zu sehen, wie weit verbreitet der Bot ist.\nWenn du das nicht magst, kannst du aber auch gerne die ungetrackte Version `/math*` verwenden.');
-}
+    helpMessages.push('');}
 
 /**
  * Main Handler Function: Bot hears text starting with mathMarker --> trim message, create png, respond

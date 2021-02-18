@@ -36,7 +36,7 @@ bot.hears(text => text.startsWith(mathMarker), async function(ctx) {
         const markerLength = ctx.message.text[mathMarker.length] === '*' ? mathMarker.length + 1 : mathMarker.length; // handle *
         const tex = ctx.message.text.substr(markerLength).trim();
         if (!tex) return;
-        var arr = str.toString().split("$");
+        var arr = tex.split("$");
         var str = "";
         arr.forEach(function(item, i, arr) {
            if(i%2==0){

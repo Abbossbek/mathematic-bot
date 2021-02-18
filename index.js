@@ -45,7 +45,7 @@ bot.hears(text => text.startsWith(mathMarker), async function(ctx) {
                str += item;
         });
         
-        const png = await typesetAndScale(tex);
+        const png = await typesetAndScale(str);
         await ctx.replyWithPhoto({ source: png });
     } catch (errors) {
         // one error at a time
